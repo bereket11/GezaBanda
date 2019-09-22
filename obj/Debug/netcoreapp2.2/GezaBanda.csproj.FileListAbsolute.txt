@@ -5,7 +5,6 @@
 /Users/berekethaile/Projects/GezaBanda/bin/Debug/netcoreapp2.2/GezaBanda.pdb
 /Users/berekethaile/Projects/GezaBanda/bin/Debug/netcoreapp2.2/GezaBanda.Views.dll
 /Users/berekethaile/Projects/GezaBanda/bin/Debug/netcoreapp2.2/GezaBanda.Views.pdb
-/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.csprojAssemblyReference.cache
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.csproj.CoreCompileInputs.cache
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.RazorAssemblyInfo.cache
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.RazorAssemblyInfo.cs
@@ -14,6 +13,13 @@
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.TagHelpers.input.cache
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.TagHelpers.output.cache
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/GezaBanda.RazorCoreGenerate.cache
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Employee/Create.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Employee/Delete.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Employee/Edit.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Employee/Index.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Home/Create.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Home/Delete.g.cshtml.cs
+/Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Home/Edit.g.cshtml.cs
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
 /Users/berekethaile/Projects/GezaBanda/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs

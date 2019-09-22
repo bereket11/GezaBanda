@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GezaBanda.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -31,6 +33,12 @@ namespace GezaBanda
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //var sqlConnectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            //services.AddDbContext<LoveContext>(options => options.UseNpgsql(KLoveContext));
+
+            services.AddDbContext<LoveContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("BandaContext")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -59,6 +67,8 @@ namespace GezaBanda
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
         }
     }
 }

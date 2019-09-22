@@ -1,8 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@model IEnumerable<GezaBanda.Models.Department>
+
+@{
+    ViewData["Title"] = "Departments";
+}
+<div style="width:100%; margin:0 auto;">
+    <h2>Departments</h2>
+    <br />
+    <p>
+        <a asp-action="Create" class="btn btn-outline-success">Create New</a>
+    </p>
+
+    <table class="table table-bordered table-striped table-hover">
+
+        <tbody>
+            @foreach (Department department in @Model)
+            {
+                <tr>
+                    <td style="margin-right: 400px; ">
+                        @Html.ActionLink(department.DeptName, "IndexWithID", "Employee", new { deptId = department.Id }, null)
+                    </td>
+                    <td width="20%">
+
+                        <a asp-action="Edit" asp-route-id="@department.Id" class="btn btn-info" style="margin-left: 18px; ">  Edit  </a> 
+                        <a asp-action="Delete" asp-route-id="@department.Id" class="btn btn-danger float-right">Delete</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+@{
+    var message = ViewBag.SuccessMsg;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<script type="text/javascript">
+    var message = @message";
+    if (message) {
+        alert(message);
+    }
+
+</script>
